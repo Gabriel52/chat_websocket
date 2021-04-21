@@ -1,0 +1,27 @@
+Comando para criar as typeorms (script)
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js" + migration:create -n nomedaMigration
+
+
+Comando para rodar as migrations que está dentro do up
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js" + migration:run
+
+Comando para rodar as migrations que está dentro do down
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js" + migration:revert
+
+Local onde fica as migrations
+    "migrationsDir": "./src/database/migrations"
+
+
+
+
+Aprendizado
+
+
+/*
+    Tipos de parametros
+    Routes params => http://localhost:3000/1
+    Query Patams => http://localhost:3000/1?search=algumacoisa
+    Body Params => {
+        name: "teste"
+    }
+*/
