@@ -25,3 +25,4 @@ Aprendizado
         name: "teste"
     }
 */
+// O método on é para ficar ouvindo, o emit é para emitir, você diz o nome da conexão, por padrão ele vem com o parametro socket 

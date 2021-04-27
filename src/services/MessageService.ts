@@ -35,6 +35,8 @@ class MessageService {
 
         return list
     }
+
+    async 
 }
 
 export { MessageService }

@@ -25,6 +25,16 @@ class UserService{
         return user;
     }
 
+    async fyndByEmail(email: string){
+        const userAlreadyExists = await this.usersRepository.findOne({email})
+        
+        if(userAlreadyExists){
+            return userAlreadyExists
+        }
+
+        return 
+    }
+
 }
 
 export { UserService }
