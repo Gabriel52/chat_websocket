@@ -28,6 +28,8 @@ io.on("connect", async (socket)=> {
             admin_id: socket.id
         });
         
-        const { socket_id } = await connectionService.fyndByUserId(user_id)
+        const { socket_id } = await connectionService.fyndByUserId(user_id);
+
+        io.to(socket_id).emit("admin_send_to_client")
     })
 })
